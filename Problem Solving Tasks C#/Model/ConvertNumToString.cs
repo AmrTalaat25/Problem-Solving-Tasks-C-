@@ -13,4 +13,7 @@ public class ConvertNumToString
          
     }
 
+    //Enhance It  like : if you have just one row in your fun use arrow fun for pest practise
+    //public string NumberToString(int num) => num.ToString()
+    
 }
