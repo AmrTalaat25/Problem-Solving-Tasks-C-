@@ -5,10 +5,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ConvertNumToString converter = new ConvertNumToString();
-        ConvertToNegative  negative = new ConvertToNegative();
+        ReverseString reverseString = new ReverseString();
 
-        int num = 5;
-        Console.WriteLine(negative.MakeNegative(num));
+        string str = "amrtalaat ";
+        Console.WriteLine(reverseString.ReverseOne(str));
+        Console.WriteLine(reverseString.ReverseTow(str));
+
+
+
+
     }
 }
