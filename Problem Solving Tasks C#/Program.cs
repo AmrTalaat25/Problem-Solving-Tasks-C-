@@ -5,12 +5,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Smallest_Int_InArray smallestInArray = new Smallest_Int_InArray();
-        int[] numbers = { 182, 0, 14, 15, 16, 17, -1, 25 };
-        Console.WriteLine(smallestInArray.FindSmallestInt(numbers));
+        NumberBetweenTowIntegers numberBetweenTowIntegers = new NumberBetweenTowIntegers(); 
+;
+        int[] result = numberBetweenTowIntegers.FindBetweenTowNumber(3, 8);
 
-
-
+        numberBetweenTowIntegers.PrintArray(result);
 
     }
 }
