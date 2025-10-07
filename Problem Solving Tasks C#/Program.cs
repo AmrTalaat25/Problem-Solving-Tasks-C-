@@ -5,13 +5,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ReverseString reverseString = new ReverseString();
-        DoubleChar doubleChar = new DoubleChar();
-
-        string str = "amr talaat ";
-        Console.WriteLine(reverseString.ReverseOne(str));
-        Console.WriteLine(reverseString.ReverseTow(str));
-        Console.WriteLine(doubleChar.DoubleString(str));
+        Smallest_Int_InArray smallestInArray = new Smallest_Int_InArray();
+        int[] numbers = { 182, 0, 14, 15, 16, 17, -1, 25 };
+        Console.WriteLine(smallestInArray.FindSmallestInt(numbers));
 
 
 
