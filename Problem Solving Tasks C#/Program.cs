@@ -5,11 +5,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        NumberBetweenTowIntegers numberBetweenTowIntegers = new NumberBetweenTowIntegers(); 
-;
-        int[] result = numberBetweenTowIntegers.FindBetweenTowNumber(3, 8);
-
-        numberBetweenTowIntegers.PrintArray(result);
+        RemoveTimeFromDate removeTimeFromDate = new RemoveTimeFromDate();
+        string lomgtime = "Friday May 2, 7pm";
+        Console.WriteLine(removeTimeFromDate.ShortenToDate(lomgtime));
 
     }
 }
