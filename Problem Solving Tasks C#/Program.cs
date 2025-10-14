@@ -5,12 +5,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        RemoveTimeFromDate removeTimeFromDate = new RemoveTimeFromDate();
-        StringSpacesRemover stringSpacesRemover = new StringSpacesRemover();
-        string lomgtime = "Friday May 2, 7pm";
-        string anyString = "8 j 8   mBliB8g  imjB8B8  jl  B";
-        Console.WriteLine(removeTimeFromDate.ShortenToDate(lomgtime));
-        Console.WriteLine(stringSpacesRemover.NoSpace(anyString));
+        OperationOnNumbers operationOnNumbers = new OperationOnNumbers();
+        Console.Write("pleass Enter Number One : ");
+        int x= int .Parse(Console.ReadLine());
+        Console.Write("pleass Enter Number Tow : ");
+        int y = int.Parse(Console.ReadLine());
+        Console.Write("pleass Enter operator  : ");
+        string oper = Console.ReadLine();
+        var result = operationOnNumbers.Operations(x, y, oper);
+        operationOnNumbers.PrintResult(result);
 
     }
 }
