@@ -7,29 +7,41 @@ using System.Threading.Tasks;
 namespace Problem_Solving_Tasks_C_.Model;
 internal class OperationOnNumbers
 {
-    public double Operations(int num1 ,int num2, string oper)
+    public double Operations(int num1, int num2, string oper)
     {
-        double result = 0.0;
-        if (oper == "+")
-            result = num1 + num2;
+        double result;
 
-        else if (oper == "-")
+        switch (oper)
         {
-            if (num1 >= num2)
+            case "+":
+                result = num1 + num2;
+                break;
+
+            case "-":
                 result = num1 - num2;
-            else
-                result = num2 - num1;
+                break;
 
+            case "*":
+                result = num1 * num2;
+                break;
+
+            case "/":
+                if (num1 == 0 || num2 == 0)
+                {
+                    Console.WriteLine("Can`t you Division by zero!");
+                    return 0;
+                }
+                result = (double)num1 / num2;
+                break;
+
+            default:
+                Console.WriteLine("Error: Invalid operator!");
+                return 0;
         }
-        else if (oper == "/")
-            result = num1 / num2;
-
-        else if(oper == "*")
-            result = num1 * num2;
-
 
         return result;
     }
+
 
     public void PrintResult(double result)
     {
