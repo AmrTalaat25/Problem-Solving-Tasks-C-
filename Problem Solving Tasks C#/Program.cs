@@ -5,13 +5,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
-        CountNumber countNumber = new CountNumber();
-        int[] numbers = { 1, 5 , 6 , 4 , 7, 8 ,10 ,11 ,44};
-        int x = 3;
-        int y = 5;
-        swapTwoNumbers.Swap( x,  y);
-        countNumber.count(numbers);
+        ASCIICode aSCIICode = new ASCIICode();
+
+        aSCIICode.Upper();
+        aSCIICode.Lower();
+        aSCIICode.Number();
+        aSCIICode.SpecialChar();
+
+
 
 
 
