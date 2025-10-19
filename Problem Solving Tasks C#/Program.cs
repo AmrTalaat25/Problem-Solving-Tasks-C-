@@ -5,12 +5,13 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ASCIICode aSCIICode = new ASCIICode();
+        StringIsUpper stringIsUpper = new StringIsUpper();
+        string text = "hello I AM AMR"; 
+        string Ntext = "HELLO I AM AMR"; 
 
-        aSCIICode.Upper();
-        aSCIICode.Lower();
-        aSCIICode.Number();
-        aSCIICode.SpecialChar();
+        Console.WriteLine(stringIsUpper.IsUpperCase(text));
+        Console.WriteLine(stringIsUpper.IsUpperCase(Ntext));
+
 
 
 
