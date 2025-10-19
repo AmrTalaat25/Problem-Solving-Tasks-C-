@@ -6,11 +6,13 @@ internal class Program
     private static void Main(string[] args)
     {
         StringIsUpper stringIsUpper = new StringIsUpper();
+        RemoveCharFromString RemoveCharFromString = new RemoveCharFromString();
         string text = "hello I AM AMR"; 
         string Ntext = "HELLO I AM AMR"; 
 
         Console.WriteLine(stringIsUpper.IsUpperCase(text));
         Console.WriteLine(stringIsUpper.IsUpperCase(Ntext));
+        Console.WriteLine(RemoveCharFromString.Remove_char(text));
 
 
 
